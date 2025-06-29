@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="300" viewBox="0 0 700 300">
+  <style>
+    .face {
+      fill: #FFDBAC;
+      stroke: #6D4C41;
+      stroke-width: 2;
+    }
+    .eye {
+      fill: white;
+      stroke: #6D4C41;
+      stroke-width: 1.5;
+    }
+    .pupil {
+      fill: #333333;
+    }
+    .eyebrow {
+      fill: none;
+      stroke: #6D4C41;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+    }
+    .mouth {
+      fill: none;
+      stroke: #6D4C41;
+      stroke-width: 2.5;
+      stroke-linecap: round;
+    }
+    .label {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+    .sublabel {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-anchor: middle;
+      fill: #555555;
+    }
+  </style>
+
+  <!-- Happy Face -->
+  <g transform="translate(100, 80)">
+    <circle class="face" cx="60" cy="60" r="55" />
+    <!-- Eyes -->
+    <ellipse class="eye" cx="40" cy="50" rx="8" ry="7" />
+    <circle class="pupil" cx="40" cy="50" r="3" />
+    <ellipse class="eye" cx="80" cy="50" rx="8" ry="7" />
+    <circle class="pupil" cx="80" cy="50" r="3" />
+    <!-- Eyebrows - slightly raised -->
+    <path class="eyebrow" d="M30,40 Q40,35 50,40" />
+    <path class="eyebrow" d="M70,40 Q80,35 90,40" />
+    <!-- Happy mouth - big smile -->
+    <path class="mouth" d="M30,70 Q60,90 90,70" stroke-width="3" />
+    <!-- Labels -->
+    <text class="label" x="60" y="135">Happy</text>
+    <text class="sublabel" x="60" y="155">Upturned mouth, raised cheeks</text>
+  </g>
+
+  <!-- Sad Face -->
+  <g transform="translate(250, 80)">
+    <circle class="face" cx="60" cy="60" r="55" />
+    <!-- Eyes - slightly drooping -->
+    <ellipse class="eye" cx="40" cy="50" rx="8" ry="6" />
+    <circle class="pupil" cx="40" cy="50" r="3" />
+    <ellipse class="eye" cx="80" cy="50" rx="8" ry="6" />
+    <circle class="pupil" cx="80" cy="50" r="3" />
+    <!-- Eyebrows - lowered at outer edges -->
+    <path class="eyebrow" d="M30,40 Q40,45 50,40" />
+    <path class="eyebrow" d="M70,40 Q80,45 90,40" />
+    <!-- Sad mouth - turned down -->
+    <path class="mouth" d="M35,80 Q60,70 85,80" />
+    <!-- Labels -->
+    <text class="label" x="60" y="135">Sad</text>
+    <text class="sublabel" x="60" y="155">Downturned mouth, lowered eyes</text>
+  </g>
+
+  <!-- Surprised Face -->
+  <g transform="translate(400, 80)">
+    <circle class="face" cx="60" cy="60" r="55" />
+    <!-- Eyes - wide open -->
+    <ellipse class="eye" cx="40" cy="50" rx="10" ry="10" />
+    <circle class="pupil" cx="40" cy="50" r="4" />
+    <ellipse class="eye" cx="80" cy="50" rx="10" ry="10" />
+    <circle class="pupil" cx="80" cy="50" r="4" />
+    <!-- Eyebrows - raised high -->
+    <path class="eyebrow" d="M30,30 Q40,25 50,30" />
+    <path class="eyebrow" d="M70,30 Q80,25 90,30" />
+    <!-- Surprised mouth - small 'o' -->
+    <ellipse class="mouth" cx="60" cy="80" rx="10" ry="12" stroke="#6D4C41" stroke-width="2.5" fill="none" />
+    <!-- Labels -->
+    <text class="label" x="60" y="135">Surprised</text>
+    <text class="sublabel" x="60" y="155">Wide eyes, raised eyebrows</text>
+  </g>
+
+  <!-- Anxious/Fearful Face -->
+  <g transform="translate(550, 80)">
+    <circle class="face" cx="60" cy="60" r="55" />
+    <!-- Eyes - wide, worried -->
+    <ellipse class="eye" cx="40" cy="45" rx="9" ry="8" />
+    <circle class="pupil" cx="40" cy="45" r="3.5" />
+    <ellipse class="eye" cx="80" cy="45" rx="9" ry="8" />
+    <circle class="pupil" cx="80" cy="45" r="3.5" />
+    <!-- Eyebrows - raised and angled -->
+    <path class="eyebrow" d="M30,35 Q40,27 50,32" />
+    <path class="eyebrow" d="M70,32 Q80,27 90,35" />
+    <!-- Tense mouth - tight line -->
+    <path class="mouth" d="M40,80 Q60,78 80,80" />
+    <!-- Labels -->
+    <text class="label" x="60" y="135">Anxious</text>
+    <text class="sublabel" x="60" y="155">Tense features, raised eyebrows</text>
+  </g>
+</svg>
